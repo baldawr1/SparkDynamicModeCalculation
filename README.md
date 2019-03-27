@@ -6,7 +6,7 @@ The columns/features name change from one dataset to another.
 
 Challenge - When dataframes have 100's of columns against which mode needs to be calculate it is tedious to write down the code for each column/feature.
 
-Solutions - One way to approach this is generate sql dynamically
+Solutions - One way to approach this is to generate spark sql dynamically
 
 The code takes in columnnames for which mode needs to be calculated and dynamically generate spark sql utilizing sparks catalyst optimizer for optimum performance.
 
