@@ -102,6 +102,7 @@ for (modeCol<-modeColList) {
 print(whereNotNullClauses)
 
 
+//Generate the entire query
 val qry = """
 select %s %s from (
 select  %s %s from (
@@ -129,6 +130,7 @@ or salary_max_count_rank = 1
 ) group by zipcode ,city
 */
 
+//Execute Max Count Query to get Mode
 val modeDF = spark.sql(qry)
 modeDF.show()
 modeDF.createOrReplaceTempView("modeDF")
