@@ -1,6 +1,6 @@
 # Spark Dynamic Mode Calculation - Calculate Mode across multiple columns(features) dynamically
 
-Many times data scientist need to calculate mode (https://www.mathsisfun.com/definitions/mode.html) across various columns/features of a dataframe/dataset.  
+Data scientist often need to calculate mode (https://www.mathsisfun.com/definitions/mode.html) across various columns/features of a dataframe.  
 
 The columns/features name change from one dataset to another.
 
@@ -33,9 +33,9 @@ Sample Dataset
 +-------+-----------+---+----+-------+
 ```
 
-Based on the column/features name provided as input , the code will generate the dynamic spark sql.
+Lets assume primary keys are - zipcode and city and mode needs to generated across - age and salary.
 
-Lets say primary keys are - zipcode and city and mode needs to generated across - age and salary.
+Based on the column/features name provided as input , the code will generate the following spark sql dynamically based on the above inputs
 ```
 select zipcode ,city
 , max(age_mode) as age_mode
