@@ -4,7 +4,11 @@ Data scientist using notebooks (Jupyter/Zeppelin) often need to calculate mode (
 
 The columns/features name change from one dataset to another.
 
-The code takes in column names for which mode needs to be calculated and dynamically generate spark sql utilizing sparks catalyst optimizer for optimum performance.
+Challenge - When dataframes have 100's of columns against which mode needs to be calculate it is tedious to write down the code for each column/feature.
+
+Solutions - One way to approach this is generate sql dynamically
+
+The code takes in columnnames for which mode needs to be calculated and dynamically generate spark sql utilizing sparks catalyst optimizer for optimum performance.
 
 Example -
 Sample Dataset
