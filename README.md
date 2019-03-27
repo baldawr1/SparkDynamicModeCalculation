@@ -1,6 +1,6 @@
 # Spark Dynamic Mode Calculation - Calculate Mode across multiple columns(features) dynamically
 
-Data scientist often need to calculate mode (https://www.mathsisfun.com/definitions/mode.html) across various columns/features of a dataframe.  
+Data scientist using notebooks (Jupyter/Zeppelin) often need to calculate mode (https://www.mathsisfun.com/definitions/mode.html) across various columns/features of a dataframe.  
 
 The columns/features name change from one dataset to another.
 
